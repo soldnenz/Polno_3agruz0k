@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!-- Название приложения -->
+    <key>CFBundleDisplayName</key>
+    <string>Polno-3agruz0k</string>
+
+    <!-- Уникальный идентификатор -->
+    <key>CFBundleIdentifier</key>
+    <string>com.polnokrasoti.3agruz0k</string>
+
+    <!-- Версия -->
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- Разрешить доступ к Фото -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Мы хотим сохранить видео в вашу галерею</string>
+
+    <!-- Разрешить "Сохранить в Файлы" -->
+    <key>UISupportsDocumentBrowser</key>
+    <true/>
+
+    <!-- Разрешить загрузки с http -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>polno-3agruz0k.duckdns.org</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSTemporaryExceptionMinimumTLSVersion</key>
+                <string>TLSv1.0</string>
+            </dict>
+        </dict>
+    </dict>
+
+</dict>
+</plist>
